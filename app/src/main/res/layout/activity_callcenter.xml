@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/activity"
+    android:orientation="vertical"
+    tools:context=".CallCenterActivity">
+
+    <FrameLayout
+        android:id="@+id/toolbar_container"
+        style="@style/FitWidth">
+
+        <include layout="@layout/toolbar" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        style="@style/MatchParent"
+        android:layout_below="@+id/toolbar_container"
+        android:foreground="?android:windowContentOverlay">
+
+        <Button
+            android:id="@+id/call_now"
+            style="@style/WrapContent"
+            android:text="@string/call_now"
+            android:layout_centerInParent="true"/>
+
+        <View style="@style/shadow" />
+
+    </RelativeLayout>
+
+</LinearLayout>

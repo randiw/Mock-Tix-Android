@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">GO-TIX</string>
+
+    <!-- fonts -->
+    <string name="MaterialIconFont">fonts/material-icon-font.ttf</string>
+
+    <!-- phone numbers -->
+    <string name="call_center_action">02150251110</string>
+    <string name="call_center_view">021-5025 1110</string>
+
+    <!-- CallCenterActivity-->
+    <string name="call_now">CALL NOW</string>
+
+    <!-- OnSaleFragment -->
+    <string name="on_sale">ON SALE</string>
+
+    <!-- MyTicketsFragment -->
+    <string name="my_tickets">MY TICKETS</string>
+
+    <!-- ComingSoonFragment -->
+    <string name="coming_soon">COMING SOON</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_call">Call Center</string>
+    <string name="action_refresh">Refresh</string>
+</resources>
