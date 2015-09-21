@@ -5,13 +5,13 @@ import android.os.Bundle;
 
 import com.gojek.gotix.AppController;
 
-import nucleus.presenter.RxPresenter;
+import lib.gojek.base.AbstractBasePresenter;
 import nucleus.view.ViewWithPresenter;
 
 /**
  * Created by randi on 9/17/15.
  */
-public abstract class BasePresenter<T extends ViewWithPresenter> extends RxPresenter<T> {
+public abstract class BasePresenter<T extends ViewWithPresenter> extends AbstractBasePresenter<T> {
 
     private Context context;
 

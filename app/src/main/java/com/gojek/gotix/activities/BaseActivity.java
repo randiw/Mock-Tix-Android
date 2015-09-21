@@ -12,13 +12,12 @@ import com.gojek.gotix.R;
 import com.gojek.gotix.presenter.BasePresenter;
 
 import butterknife.Bind;
-import butterknife.ButterKnife;
-import nucleus.view.NucleusAppCompatActivity;
+import lib.gojek.base.AbstractBaseActivity;
 
 /**
  * Created by randi on 9/17/15.
  */
-public abstract class BaseActivity<T extends BasePresenter> extends NucleusAppCompatActivity<T> {
+public abstract class BaseActivity<T extends BasePresenter> extends AbstractBaseActivity<T> {
 
     private static final String TAG = BaseActivity.class.getSimpleName();
 
@@ -27,8 +26,6 @@ public abstract class BaseActivity<T extends BasePresenter> extends NucleusAppCo
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(getLayout());
-        ButterKnife.bind(this);
 
         if (toolbar != null) {
             toolbar.setTitle(R.string.app_name);
@@ -38,8 +35,6 @@ public abstract class BaseActivity<T extends BasePresenter> extends NucleusAppCo
             setSupportActionBar(toolbar);
         }
     }
-
-    protected abstract int getLayout();
 
     public void setTitle(String title) {
         if (toolbar != null) {
